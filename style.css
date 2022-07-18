@@ -9,16 +9,21 @@
     --clr-1: #312E81;
     --clr-2: #A5B4FC;
     --clr-3: #F5F3FF;
+    --clr-4: #84CC16;
     --fwt-1: 400;
     --fwt-2: 500;
     --fs-1: 2rem;
     --fs-2: 1.4rem;
     --fs-3: 1rem;
+
 }
 .mdi.md-18 { font-size: 18px; }
 .mdi.md-24 { font-size: 24px; } /* Default */
 .mdi.md-36 { font-size: 36px; }
 .mdi.md-48 { font-size: 48px; }
+
+.user-icon-4{ width: 4em;}
+.user-icon-5{ width: 5em;}
 
 /*Layout*/
 .container{
@@ -38,10 +43,6 @@
     gap: 3em;
     background-color: var(--clr-1);
     color: var(--clr-3);
-}
-h1{
-    /* color: #FF3F80; */
-
 }
 .header{
     padding: 2em;
@@ -64,8 +65,6 @@ h1{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-auto-rows: 1fr;
     gap: 2rem 1rem;
-    
-
 }
 .heading{
     grid-column: 1/-1;
@@ -87,7 +86,6 @@ h1{
 }
 
 .banner{
-    /* border: 2px solid red; */
     flex-grow: 1;
     border-radius: 20px;
     padding: 2em;
@@ -139,18 +137,18 @@ a{
 }
 
 .links:hover{
-  transform: scale(1.2);
+    transform: scale(1.2);
   text-shadow: none;
 }
 /* header */
-
-.searchbar{
-    /* border: 2px solid purple; */
+.brand{
+    display: flex;
+    gap: 0.75rem;
 }
 .search__input {
     width: 100%;
     padding: 12px 24px;
-
+    
     background-color: transparent;
     transition: transform 250ms ease-in-out;
     font-family: inherit;
@@ -224,7 +222,6 @@ a{
 .btns{
     padding-top: 2em;
     text-align: center;
-    /* border: 1px solid red; */
 }
 .button{
     display: inline-block;
@@ -243,7 +240,7 @@ a{
     transition: all 0.2s;
 }
 .button:hover{
-    border-color: #FF3F80;
+    border-color: var(--clr-4);
 }
 .welcome-msg{
     display: flex;
@@ -258,13 +255,12 @@ a{
     overflow: hidden;
 }
 .color-bar{
-    background-color: #84CC16;
+    background-color: var(--clr-4);
     width: 10%;
     height: 100%;
 }
 .card-content{
     margin: 2em;
-    /* border: 2px solid red; */
     position: relative;
 }
 .user-preference{
@@ -281,13 +277,8 @@ a{
 .action-item:not(:last-child){
     border-bottom: 1px solid gray;
 }
-.brand{
-    display: flex;
-    gap: 0.75rem;
-}
 .user-icons{
-    width: 5em;
     padding: 0.5em;
     clip-path: circle();
-    background-color: #84CC16;
+    background-color: var(--clr-4);
 }
