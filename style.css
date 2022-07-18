@@ -40,7 +40,7 @@
     color: var(--clr-3);
 }
 h1{
-    color: #FF3F80;
+    /* color: #FF3F80; */
 
 }
 .header{
@@ -249,17 +249,35 @@ a{
     display: flex;
     gap: 0.75em;
 }
-
+/* Projects Area */
 .card{
     border: 2px solid black;
     background-color: aliceblue;
     border-radius: 10px;
-    
+    display: flex;
+    overflow: hidden;
 }
-
-.announce-title{
+.color-bar{
+    background-color: #84CC16;
+    width: 10%;
+    height: 100%;
+}
+.card-content{
+    margin: 2em;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.user-preference{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.announce-title, .card-title{
     font-weight: bold;
+    font-size: 1.125rem;
 }
+/* Banners */
+
 .action-item:not(:last-child){
     border-bottom: 1px solid gray;
 }
@@ -271,5 +289,5 @@ a{
     width: 5em;
     padding: 0.5em;
     clip-path: circle();
-    background-color: #A5B4FC;
+    background-color: #84CC16;
 }
